@@ -22,7 +22,7 @@ import type {
   McpConfigTarget,
   PlannedSubAgentFile,
 } from '../../shared/types/messages';
-import type { Workflow } from '../../shared/types/workflow-definition';
+import type { Workflow } from '@cc-wf-studio/core';
 import { log } from '../extension';
 import { registerMcpTools } from './mcp-server-tools';
 

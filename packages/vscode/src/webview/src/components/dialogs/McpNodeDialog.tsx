@@ -8,7 +8,7 @@
  */
 
 import * as Dialog from '@radix-ui/react-dialog';
-import { NodeType } from '@shared/types/workflow-definition';
+import { NodeType } from '@cc-wf-studio/core';
 import { ExternalLink } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { useMcpCreationWizard, WizardStep } from '../../hooks/useMcpCreationWizard';

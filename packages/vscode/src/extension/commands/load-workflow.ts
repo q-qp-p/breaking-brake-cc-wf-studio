@@ -7,7 +7,7 @@
 import type { Webview } from 'vscode';
 import type { LoadWorkflowPayload } from '../../shared/types/messages';
 import type { FileService } from '../services/file-service';
-import { migrateWorkflow } from '../utils/migrate-workflow';
+import { migrateWorkflow } from '@cc-wf-studio/core';
 
 /**
  * Load a specific workflow and send to webview

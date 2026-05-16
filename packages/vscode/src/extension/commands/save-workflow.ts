@@ -8,7 +8,7 @@
 import type { Webview } from 'vscode';
 import * as vscode from 'vscode';
 import type { SaveSuccessPayload } from '../../shared/types/messages';
-import type { Workflow } from '../../shared/types/workflow-definition';
+import type { Workflow } from '@cc-wf-studio/core';
 import type { FileService } from '../services/file-service';
 import { getMaxNodes } from '../services/workflow-settings-service';
 

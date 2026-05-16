@@ -5,7 +5,7 @@
  */
 
 import * as vscode from 'vscode';
-import type { AIGenerationMetrics, SchemaFormat } from '../../shared/types/ai-metrics';
+import type { AIGenerationMetrics, SchemaFormat } from '@cc-wf-studio/core';
 import { log } from '../extension';
 
 // In-memory storage for session metrics

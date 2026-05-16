@@ -20,9 +20,9 @@ import {
   type SubAgentFlow,
   type SubAgentFlowNodeData,
   type Workflow,
-} from '../../shared/types/workflow-definition';
+} from '@cc-wf-studio/core';
 import { log } from '../extension';
-import { validateAIGeneratedWorkflow } from '../utils/validate-workflow';
+import { validateAIGeneratedWorkflow } from '@cc-wf-studio/core';
 import {
   estimateTokens,
   getConfiguredSchemaFormat,

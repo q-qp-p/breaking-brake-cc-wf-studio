@@ -10,13 +10,13 @@ import {
   generateExecutionInstructions,
   generateMermaidFlowchart,
   sanitizeNodeId,
-} from '../../shared/services/workflow-prompt-generator';
+} from '@cc-wf-studio/core';
 import type {
   SubAgentFlow,
   SubAgentFlowNode,
   SubAgentNode,
   Workflow,
-} from '../../shared/types/workflow-definition';
+} from '@cc-wf-studio/core';
 import type { FileService } from './file-service';
 
 /**

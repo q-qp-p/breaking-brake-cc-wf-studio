@@ -14,7 +14,7 @@
  */
 
 import * as Dialog from '@radix-ui/react-dialog';
-import type { McpNodeData } from '@shared/types/mcp-node';
+import type { McpNodeData } from '@cc-wf-studio/core/mcp';
 import { useEffect, useState } from 'react';
 import { EditWizardStep, useMcpEditWizard } from '../../hooks/useMcpEditWizard';
 import { useTranslation } from '../../i18n/i18n-context';

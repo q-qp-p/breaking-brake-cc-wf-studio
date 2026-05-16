@@ -18,7 +18,7 @@ import type {
   RefineWorkflowPayload,
   SubAgentFlowRefinementSuccessPayload,
 } from '@shared/types/messages';
-import type { ConversationHistory, Workflow } from '@shared/types/workflow-definition';
+import type { ConversationHistory, Workflow } from '@cc-wf-studio/core';
 import { vscode } from '../main';
 
 /**

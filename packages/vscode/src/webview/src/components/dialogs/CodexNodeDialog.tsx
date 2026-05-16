@@ -8,7 +8,7 @@
  */
 
 import * as Dialog from '@radix-ui/react-dialog';
-import { NodeType, VALIDATION_RULES } from '@shared/types/workflow-definition';
+import { NodeType, VALIDATION_RULES } from '@cc-wf-studio/core';
 import { ChevronDown, ChevronRight, ExternalLink } from 'lucide-react';
 import { useState } from 'react';
 import { useTranslation } from '../../i18n/i18n-context';

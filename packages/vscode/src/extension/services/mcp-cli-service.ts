@@ -12,7 +12,7 @@
  */
 
 import nanoSpawn from 'nano-spawn';
-import type { McpServerReference, McpToolReference } from '../../shared/types/mcp-node';
+import type { McpServerReference, McpToolReference } from '@cc-wf-studio/core/mcp';
 import { log } from '../extension';
 import { getClaudeSpawnCommand } from './claude-cli-path';
 import { getCachedTools, setCachedTools } from './mcp-cache-service';

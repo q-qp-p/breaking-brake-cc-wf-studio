@@ -10,7 +10,7 @@ import type { Workflow } from '@shared/types/messages';
 import { X } from 'lucide-react';
 import type React from 'react';
 import { useEffect, useRef, useState } from 'react';
-import type { SampleWorkflowMeta } from '../../../../shared/types/sample-workflow';
+import type { SampleWorkflowMeta } from '@cc-wf-studio/core';
 import { useTranslation } from '../../i18n/i18n-context';
 import type { WebviewTranslationKeys } from '../../i18n/translation-keys';
 import { vscode } from '../../main';

@@ -12,7 +12,7 @@
 import {
   generateMermaidFlowchart,
   sanitizeNodeId,
-} from '@shared/services/workflow-prompt-generator';
+} from '@cc-wf-studio/core';
 import type { Workflow } from '@shared/types/messages';
 import {
   Locate,

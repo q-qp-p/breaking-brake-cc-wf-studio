@@ -8,8 +8,8 @@ import * as path from 'node:path';
 import {
   generateExecutionInstructions,
   generateMermaidFlowchart,
-} from '../../shared/services/workflow-prompt-generator';
-import type { Workflow } from '../../shared/types/workflow-definition';
+} from '@cc-wf-studio/core';
+import type { Workflow } from '@cc-wf-studio/core';
 import { nodeNameToFileName } from './export-service';
 import type { FileService } from './file-service';
 

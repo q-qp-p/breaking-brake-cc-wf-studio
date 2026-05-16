@@ -22,7 +22,7 @@ import {
   hasNonStandardSkills,
   promptAndNormalizeSkills,
 } from '../services/skill-normalization-service';
-import { validateAIGeneratedWorkflow } from '../utils/validate-workflow';
+import { validateAIGeneratedWorkflow } from '@cc-wf-studio/core';
 
 /**
  * Export workflow to .claude format

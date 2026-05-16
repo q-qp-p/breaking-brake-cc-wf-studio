@@ -12,7 +12,7 @@ import type {
   RunForRooCodePayload,
   RunForRooCodeSuccessPayload,
 } from '../../shared/types/messages';
-import { NodeType } from '../../shared/types/workflow-definition';
+import { NodeType } from '@cc-wf-studio/core';
 import { extractMcpServerIdsFromWorkflow } from '../services/copilot-export-service';
 import { nodeNameToFileName } from '../services/export-service';
 import type { FileService } from '../services/file-service';

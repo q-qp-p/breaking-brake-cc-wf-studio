@@ -25,8 +25,13 @@ export * from './utils/validate-workflow';
 export * from './utils/migrate-workflow';
 export * from './utils/schema-parser';
 
-// Namespaced re-exports to side-step duplicate identifiers with the modules above.
-// - `McpNode.McpNodeData` / `McpNode.ToolParameter` (collide with workflow-definition)
-// - `SlackWorkflowValidator.ValidationResult` (collides with validate-workflow)
-export * as McpNode from './types/mcp-node';
-export * as SlackWorkflowValidator from './utils/workflow-validator';
+// Slack workflow validator — its `ValidationResult` collides with the AI
+// validator's identical name, so re-export it under a distinct alias.
+export {
+  validateWorkflowFile,
+  type ValidationResult as SlackValidationResult,
+} from './utils/workflow-validator';
+
+// mcp-node has its own `McpNodeData` / `ToolParameter` that pre-date and
+// drifted from workflow-definition's versions. Reach those types and helpers
+// via the `/mcp` subpath import: `import { ... } from '@cc-wf-studio/core/mcp'`.

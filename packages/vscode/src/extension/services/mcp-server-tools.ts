@@ -22,9 +22,9 @@ import {
   NodeType,
   type Workflow,
   type WorkflowNode,
-} from '../../shared/types/workflow-definition';
+} from '@cc-wf-studio/core';
 import { getProjectCommandsDir } from '../utils/path-utils';
-import { validateAIGeneratedWorkflow } from '../utils/validate-workflow';
+import { validateAIGeneratedWorkflow } from '@cc-wf-studio/core';
 import { scanAllCommands } from './command-service';
 import { generateSubAgentFile, nodeNameToFileName } from './export-service';
 import type { McpServerManager } from './mcp-server-service';

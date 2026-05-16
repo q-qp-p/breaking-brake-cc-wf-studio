@@ -17,9 +17,9 @@ import type {
   ImportWorkflowFailedEvent,
   ImportWorkflowSuccessEvent,
 } from '../types/slack-messages';
-import { migrateWorkflow } from '../utils/migrate-workflow';
+import { migrateWorkflow } from '@cc-wf-studio/core';
 import { handleSlackError, type SlackErrorInfo } from '../utils/slack-error-handler';
-import { validateWorkflowFile } from '../utils/workflow-validator';
+import { validateWorkflowFile } from '@cc-wf-studio/core';
 
 /**
  * Handle workflow import from Slack

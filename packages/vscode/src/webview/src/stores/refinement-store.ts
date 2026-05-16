@@ -13,7 +13,7 @@ import type {
   CopilotModel,
   CopilotModelInfo,
 } from '@shared/types/messages';
-import type { ConversationHistory, ConversationMessage } from '@shared/types/workflow-definition';
+import type { ConversationHistory, ConversationMessage } from '@cc-wf-studio/core';
 import { create } from 'zustand';
 import { listCopilotModels } from '../services/refinement-service';
 

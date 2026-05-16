@@ -11,8 +11,8 @@
 
 import * as Dialog from '@radix-ui/react-dialog';
 import * as Select from '@radix-ui/react-select';
-import { BUILT_IN_SUB_AGENTS } from '@shared/constants/built-in-sub-agents';
-import type { BuiltInSubAgentType } from '@shared/types/workflow-definition';
+import { BUILT_IN_SUB_AGENTS } from '@cc-wf-studio/core';
+import type { BuiltInSubAgentType } from '@cc-wf-studio/core';
 import { useCallback, useEffect, useId, useState } from 'react';
 import { useTranslation } from '../../i18n/i18n-context';
 import type { SubAgentColor } from '../common/ColorPicker';

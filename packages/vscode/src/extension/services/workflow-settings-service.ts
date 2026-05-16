@@ -5,7 +5,7 @@
  */
 
 import * as vscode from 'vscode';
-import { VALIDATION_RULES } from '../../shared/types/workflow-definition';
+import { VALIDATION_RULES } from '@cc-wf-studio/core';
 
 /**
  * Get the maximum number of nodes allowed in a workflow.

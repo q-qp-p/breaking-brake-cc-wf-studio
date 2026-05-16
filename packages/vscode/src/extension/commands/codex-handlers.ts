@@ -12,7 +12,7 @@ import type {
   RunForCodexCliPayload,
   RunForCodexCliSuccessPayload,
 } from '../../shared/types/messages';
-import { NodeType } from '../../shared/types/workflow-definition';
+import { NodeType } from '@cc-wf-studio/core';
 import {
   checkCodexMultiAgentEnabled,
   enableCodexMultiAgent,

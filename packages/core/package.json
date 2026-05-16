@@ -3,8 +3,22 @@
   "version": "0.0.0",
   "description": "Core workflow schema, parser, serializer, Mermaid generation, and Claude Code export logic for cc-wf-studio",
   "license": "AGPL-3.0-or-later",
+  "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./mcp": {
+      "types": "./dist/types/mcp-node.d.ts",
+      "default": "./dist/types/mcp-node.js"
+    },
+    "./resources/workflow-schema.json": "./resources/workflow-schema.json",
+    "./resources/workflow-schema.toon": "./resources/workflow-schema.toon",
+    "./package.json": "./package.json"
+  },
   "files": [
     "dist",
     "resources",

@@ -5,10 +5,10 @@
  * Based on: /specs/001-cc-wf-studio/plan.md
  */
 
-import { BUILT_IN_SUB_AGENTS } from '@shared/constants/built-in-sub-agents';
+import { BUILT_IN_SUB_AGENTS } from '@cc-wf-studio/core';
 import type { CommandReference } from '@shared/types/messages';
-import type { BuiltInSubAgentType, SubAgentFlow } from '@shared/types/workflow-definition';
-import { NodeType } from '@shared/types/workflow-definition';
+import type { BuiltInSubAgentType, SubAgentFlow } from '@cc-wf-studio/core';
+import { NodeType } from '@cc-wf-studio/core';
 import {
   Bot,
   GitBranch,

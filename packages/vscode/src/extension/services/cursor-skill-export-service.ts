@@ -6,16 +6,16 @@
  */
 
 import * as path from 'node:path';
-import { BUILT_IN_SUB_AGENTS } from '../../shared/constants/built-in-sub-agents';
+import { BUILT_IN_SUB_AGENTS } from '@cc-wf-studio/core';
 import {
   generateExecutionInstructions,
   generateMermaidFlowchart,
-} from '../../shared/services/workflow-prompt-generator';
+} from '@cc-wf-studio/core';
 import type {
   SubAgentFlowNode,
   SubAgentNode,
   Workflow,
-} from '../../shared/types/workflow-definition';
+} from '@cc-wf-studio/core';
 import {
   generateSubAgentFile,
   generateSubAgentFlowAgentFile,

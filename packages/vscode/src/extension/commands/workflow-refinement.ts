@@ -18,7 +18,7 @@ import type {
   RefineWorkflowPayload,
   SubAgentFlowRefinementSuccessPayload,
 } from '../../shared/types/messages';
-import type { ConversationMessage } from '../../shared/types/workflow-definition';
+import type { ConversationMessage } from '@cc-wf-studio/core';
 import { log } from '../extension';
 import { cancelAiRequest } from '../services/ai-provider';
 import {

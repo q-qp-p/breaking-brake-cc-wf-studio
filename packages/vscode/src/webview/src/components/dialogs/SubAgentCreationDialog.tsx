@@ -6,9 +6,9 @@
  */
 
 import * as Dialog from '@radix-ui/react-dialog';
-import { BUILT_IN_SUB_AGENTS } from '@shared/constants/built-in-sub-agents';
+import { BUILT_IN_SUB_AGENTS } from '@cc-wf-studio/core';
 import type { CommandReference } from '@shared/types/messages';
-import type { BuiltInSubAgentType } from '@shared/types/workflow-definition';
+import type { BuiltInSubAgentType } from '@cc-wf-studio/core';
 import { ExternalLink } from 'lucide-react';
 import type React from 'react';
 import { useCallback, useEffect, useMemo, useState } from 'react';

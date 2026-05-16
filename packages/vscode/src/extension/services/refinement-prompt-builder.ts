@@ -6,7 +6,7 @@
  */
 
 import { encode } from '@toon-format/toon';
-import type { ConversationHistory, Workflow } from '../../shared/types/workflow-definition';
+import type { ConversationHistory, Workflow } from '@cc-wf-studio/core';
 import { getCurrentLocale } from '../i18n/i18n-service';
 import {
   CLARIFICATION_TRIGGERS,

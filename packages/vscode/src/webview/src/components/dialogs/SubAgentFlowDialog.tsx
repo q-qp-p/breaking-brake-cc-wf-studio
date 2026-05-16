@@ -7,7 +7,7 @@
 
 import * as Collapsible from '@radix-ui/react-collapsible';
 import * as Dialog from '@radix-ui/react-dialog';
-import type { ConversationHistory } from '@shared/types/workflow-definition';
+import type { ConversationHistory } from '@cc-wf-studio/core';
 import { Check, Sparkles, X } from 'lucide-react';
 import type React from 'react';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';

@@ -15,7 +15,7 @@ import type {
   SlashCommandContext,
   SlashCommandModel,
   WorkflowHooks,
-} from '@shared/types/workflow-definition';
+} from '@cc-wf-studio/core';
 import {
   Check,
   ChevronDown,

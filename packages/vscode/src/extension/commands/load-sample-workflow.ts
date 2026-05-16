@@ -16,7 +16,7 @@ import type {
   SampleWorkflowLoadedPayload,
   SampleWorkflowPreviewLoadedPayload,
 } from '../../shared/types/messages';
-import type { SampleWorkflowFile } from '../../shared/types/sample-workflow';
+import type { SampleWorkflowFile } from '@cc-wf-studio/core';
 
 const LOCALE_SUFFIX_PATTERN = /^([a-z]{2})(-[a-z]{2,4})?$/i;
 const SAMPLE_ID_PATTERN = /^[a-z0-9][a-z0-9-]*$/i;

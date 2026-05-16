@@ -9,7 +9,7 @@
 
 import * as Dialog from '@radix-ui/react-dialog';
 import type { SkillReference } from '@shared/types/messages';
-import { NodeType, VALIDATION_RULES } from '@shared/types/workflow-definition';
+import { NodeType, VALIDATION_RULES } from '@cc-wf-studio/core';
 import { ExternalLink } from 'lucide-react';
 import { useEffect, useMemo, useState } from 'react';
 import { useTranslation } from '../../i18n/i18n-context';
