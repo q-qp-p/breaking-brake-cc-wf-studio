@@ -10,6 +10,7 @@
  */
 
 import { Command } from 'commander';
+import { registerRenderCommand } from './commands/render.js';
 
 const program = new Command();
 
@@ -17,6 +18,8 @@ program
   .name('ccwf')
   .description('Command-line tool for cc-wf-studio workflows.')
   .version('0.0.0');
+
+registerRenderCommand(program);
 
 program.parseAsync(process.argv).catch((error) => {
   process.stderr.write(`${error instanceof Error ? error.stack ?? error.message : String(error)}\n`);
