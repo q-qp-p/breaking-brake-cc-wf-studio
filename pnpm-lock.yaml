@@ -53,6 +53,9 @@ importers:
       '@cc-wf-studio/core':
         specifier: workspace:*
         version: link:../core
+      '@cc-wf-studio/mcp':
+        specifier: workspace:*
+        version: link:../mcp
       '@modelcontextprotocol/sdk':
         specifier: ^1.26.0
         version: 1.29.0(zod@4.4.3)

@@ -62,8 +62,12 @@ export interface ApplyWorkflowOptions {
 
 export interface ApplyWorkflowResult {
   success: boolean;
-  /** Revision of the workflow after this apply (or before, on failure). */
-  revision: string;
+  /**
+   * Revision of the workflow after this apply (or before, on failure).
+   * Optional because the canvas adapter doesn't always learn the new revision
+   * synchronously — clients should call get_current_workflow when they need it.
+   */
+  revision?: string;
   /** Populated on failure. */
   error?: string;
 }
