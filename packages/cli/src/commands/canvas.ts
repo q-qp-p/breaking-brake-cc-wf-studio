@@ -131,7 +131,15 @@ export function registerCanvasCommand(program: Command): void {
 
         openInBrowser(server.url);
 
+        // Coalesce repeated signals. Terminals deliver SIGINT to the whole
+        // process group on Ctrl+C, and tooling that wraps the CLI (pnpm,
+        // tsx, …) forwards SIGINT to its children too — so without a guard
+        // the handler fires twice and we get a duplicated banner plus a
+        // doomed second `server.close()` racing with the in-flight one.
+        let shuttingDown = false;
         const shutdown = async (signal: NodeJS.Signals): Promise<void> => {
+          if (shuttingDown) return;
+          shuttingDown = true;
           process.stdout.write(`\nReceived ${signal}, shutting down ccwf canvas…\n`);
           try {
             await server.close();
