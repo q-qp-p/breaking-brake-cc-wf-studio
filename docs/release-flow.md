@@ -6,9 +6,10 @@ This repository uses **[Changesets](https://github.com/changesets/changesets)** 
 
 1. Open a feature/fix PR against `main`.
 2. If your change affects a published package, run `pnpm changeset` locally and commit the generated `.changeset/<name>.md`. (Docs/chore-only PRs: `pnpm changeset add --empty`.)
-3. Merge your PR. The `release-version-pr.yml` workflow opens / updates a `chore(release): version packages` PR collecting all pending changesets (this is a **preview** — version bumps + CHANGELOG diff; nothing is published yet).
-4. When ready to release, merge that "Version Packages" PR into `main`, then promote `main` → `production`.
-5. A maintainer runs the **"Release — Publish"** workflow from the Actions UI (ref defaults to `production`). It publishes the npm packages and uploads the VSIX for `cc-wf-studio`.
+3. Check the **changeset-bot** comment on your PR — 🦋 means a changeset was detected, ⚠️ means none was found. If you see ⚠️ and the PR should release something, add the missing changeset; if it intentionally has no release, add an empty one to clear the warning.
+4. Merge your PR. The `release-version-pr.yml` workflow opens / updates a `chore(release): version packages` PR collecting all pending changesets (this is a **preview** — version bumps + CHANGELOG diff; nothing is published yet).
+5. When ready to release, merge that "Version Packages" PR into `main`, then promote `main` → `production`.
+6. A maintainer runs the **"Release — Publish"** workflow from the Actions UI (ref defaults to `production`). It publishes the npm packages and uploads the VSIX for `cc-wf-studio`.
 
 ## Branch model
 
