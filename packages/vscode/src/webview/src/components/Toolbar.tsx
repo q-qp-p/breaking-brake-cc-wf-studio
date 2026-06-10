@@ -276,7 +276,8 @@ export const Toolbar: React.FC<ToolbarProps> = ({
         workflowDescription || undefined,
         activeWorkflow?.conversationHistory,
         subAgentFlows,
-        slashCommandOptions
+        slashCommandOptions,
+        activeWorkflow?.tour
       );
 
       // Validate workflow before saving
@@ -1289,7 +1290,8 @@ export const Toolbar: React.FC<ToolbarProps> = ({
       workflowDescription || undefined,
       activeWorkflow?.conversationHistory,
       subAgentFlows,
-      slashCommandOptions
+      slashCommandOptions,
+      activeWorkflow?.tour
     );
     setActiveWorkflow(currentWorkflow);
 
@@ -1310,6 +1312,7 @@ export const Toolbar: React.FC<ToolbarProps> = ({
     workflowName,
     workflowDescription,
     activeWorkflow?.conversationHistory,
+    activeWorkflow?.tour,
     subAgentFlows,
     slashCommandOptions,
     setActiveWorkflow,
